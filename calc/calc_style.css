@@ -1,0 +1,71 @@
+html {
+  background-color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  margin-left:38%;
+  margin-top: 10%;
+}
+
+.box {
+  border: 2px solid #3A75C4;
+  border-radius: 20px;
+  padding: 30px;
+  width: 420px;
+  background-color: white;
+}
+
+p {
+  margin-left: 0px;
+  margin-top: 0px;
+  color:#26589C;
+}
+
+button {
+  background-color: #3A75C4;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  width: 45px;
+  height: 45px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+button[name = mem_write], [name = mem_read] {
+  background-color: #3A75C4;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  width: 65px;
+  height: 45px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+input[type = number] {
+  border: 1px solid #26589C;
+  border-radius: 5px;
+  color:#3A75C4;
+  width: 100%;
+  outline-color:#3A75C4;
+  font-size: 35px;
+  direction: rtl;
+}
+
+input[name = "mem_ind"] {
+  border: none;
+  color:#9a9a9a;
+  font-size: 25px;
+  width: 100%;
+  text-align: right;
+}
+
+label {
+  width: 10%;
+  color:#26589C;
+}
+}

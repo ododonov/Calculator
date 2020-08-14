@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Калькулятор </title>
+  <link rel = "stylesheet" href = "calc_style.css">
+</head>
+
+<body>
+
+<div class = box>
+<p>Введите число 1, затем число 2 и выберите действие:</p>
+
+<p> число 1:
+  <input
+  name = "box1"
+  id = "box1"
+  type = number
+  ></input>
+</p>
+
+
+<p> число 2:
+  <input
+  name = "box2"
+  id = "box2"
+  type = number
+  ></input>
+</p>
+
+<p>
+  <button
+  name = "add"
+  onclick = add()
+  title = "Сложить число 1 и число 2"
+  > + </button>
+
+  <button
+  name = "sub"
+  onclick = sub()
+  title = "Вычесть из числа 1 число 2"
+  > - </button>
+
+  <button
+  name = "mul"
+  onclick = mul()
+  title = "Перемножить число 1 и число 2"
+  > x </button>
+
+  <button
+  name = "div"
+  onclick = div()
+  title = "Разделить число 1 на число 2"
+  > / </button>
+
+  <button
+  name = "clear"
+  onclick = clr()
+  title = "Очистить поля"
+  > C </button>
+
+  <button
+  name = "mem_write"
+  onclick = mem_write()
+  title = "Записать текущий Результат в память"
+  > MW </button>
+
+  <button
+  name = "mem_read"
+  onclick = mem_read()
+  title = "Записать текущее значение в памяти в Число 1"
+  > MR </button>
+</p>
+
+<p>
+<input
+  name = "mem_ind"
+  id = mem_ind
+  readonly = true
+  title = "Текущее значение памяти">
+</input>
+</p>
+
+<p> Результат:
+  <input
+  type = number
+  name = "box3"
+  id = "box3"
+  readonly = true
+  ></input>
+</p>
+
+<label>
+  <input
+  type = "checkbox"
+  name = "sel"
+  id = sel
+  onclick = resel()
+  > Включить перенос результата в Число 1
+</label>
+</div>
+
+<script src = calc_script.js> </script>
+
+</body>
+</html>
