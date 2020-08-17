@@ -6,56 +6,105 @@
 </head>
 
 <body>
-
 <div class = box>
-<p>Введите число 1, затем число 2 и выберите действие:</p>
 
-<p> число 1:
-  <input
-  name = "box1"
-  id = "box1"
-  type = number
+<input
+  name = "res_box"
+  id = "res_box"
+  readonly = true
+  ></input>
+<input
+  name = "in_box"
+  id = "in_box"
+  readonly = true
   ></input>
 </p>
 
+<p> <!-- числа 1 - 5 -->
+  <button
+  name = "one"
+  onclick = one()
+  > 1 </button>
 
-<p> число 2:
-  <input
-  name = "box2"
-  id = "box2"
-  type = number
-  ></input>
+  <button
+  name = "two"
+  onclick = two()
+  > 2 </button>
+
+  <button
+  name = "three"
+  onclick = three()
+  > 3 </button>
+
+  <button
+  name = "four"
+  onclick = four()
+  > 4 </button>
+
+  <button
+  name = "five"
+  onclick = five()
+  > 5 </button>
 </p>
 
-<p>
+<p>    <!-- числа 6 - 0 -->
+  <button
+  name = "six"
+  onclick = six()
+  > 6 </button>
+
+  <button
+  name = "seven"
+  onclick = seven()
+  > 7 </button>
+
+  <button
+  name = "eight"
+  onclick = eight()
+  > 8 </button>
+
+  <button
+  name = "nine"
+  onclick = nine()
+  > 9 </button>
+
+  <button
+  name = "zero"
+  onclick = zero()
+  > 0 </button>
+</p>
+
+<p> <!-- кнопки + - x / = -->
   <button
   name = "add"
   onclick = add()
-  title = "Сложить число 1 и число 2"
   > + </button>
 
   <button
   name = "sub"
   onclick = sub()
-  title = "Вычесть из числа 1 число 2"
   > - </button>
 
   <button
   name = "mul"
   onclick = mul()
-  title = "Перемножить число 1 и число 2"
   > x </button>
 
   <button
   name = "div"
   onclick = div()
-  title = "Разделить число 1 на число 2"
   > / </button>
 
   <button
+  name = "equal"
+  onclick = equal()
+  > = </button>
+</p>
+
+<p>
+  <button
   name = "clear"
   onclick = clr()
-  title = "Очистить поля"
   > C </button>
 
   <button
@@ -80,23 +129,6 @@
 </input>
 </p>
 
-<p> Результат:
-  <input
-  type = number
-  name = "box3"
-  id = "box3"
-  readonly = true
-  ></input>
-</p>
-
-<label>
-  <input
-  type = "checkbox"
-  name = "sel"
-  id = sel
-  onclick = resel()
-  > Включить перенос результата в Число 1
-</label>
 </div>
 
 <script src = calc_script.js> </script>

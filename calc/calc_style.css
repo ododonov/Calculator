@@ -10,7 +10,7 @@ html {
   border: 2px solid #3A75C4;
   border-radius: 20px;
   padding: 30px;
-  width: 420px;
+  width: 270px;
   background-color: white;
 }
 
@@ -46,14 +46,24 @@ button[name = mem_write], [name = mem_read] {
   cursor: pointer;
 }
 
-input[type = number] {
+input[name = res_box] {
   border: 1px solid #26589C;
-  border-radius: 5px;
+  border-bottom: none;
+  color:#9a9a9a;
+  width: 100%;
+  outline-color:#3A75C4;
+  font-size: 35px;
+  text-align: right;
+}
+
+input[name = in_box] {
+  border: 1px solid #26589C;
+  border-top: none;
   color:#3A75C4;
   width: 100%;
   outline-color:#3A75C4;
   font-size: 35px;
-  direction: rtl;
+  text-align: right;
 }
 
 input[name = "mem_ind"] {
