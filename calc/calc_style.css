@@ -53,7 +53,7 @@ input[type = number] {
   width: 100%;
   outline-color:#3A75C4;
   font-size: 35px;
-  direction: rtl;
+  text-align: right;
 }
 
 input[name = "mem_ind"] {
